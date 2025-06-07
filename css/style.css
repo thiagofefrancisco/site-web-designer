@@ -1,0 +1,406 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background-color: #141B23;
+    font-family: 'Exo 2', sans-serif;
+	font-size: 16px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 48;
+    line-height: 1.2em;
+}
+
+h2 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 32;
+    line-height: 1em;
+}
+
+h3 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 24;
+    line-height: 1.2em;
+}
+
+p {
+    color: #fff;
+    font-weight: 400;
+    font-size: 16;
+    line-height: 1.2em;
+}
+
+.negrito {
+    font-weight: 600;
+}
+
+/* Estilos do Cabeçalho ------------------------------------*/
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);          /* desfoque de fundo */
+    -webkit-backdrop-filter: blur(20px);  /* compatibilidade com Safari */
+    z-index: 999999;
+}
+
+.cabecalho-container {
+    display: flex;
+    width: 1280px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalho ul {
+    display: flex;
+    gap: 32px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.cabecalho a {
+    text-decoration: none;
+    color: #fff;    
+}
+
+.logo {
+    height: 44px;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.btn-orcamento {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    cursor: pointer;    
+}
+
+/* Estilos da Home ------------------------------------*/
+
+.home {
+    background-image: url("/images/background.webp");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height: 800px;    
+    margin-top: -80px;
+}
+
+.home-container {    
+    display: flex;             
+    width: 1280px;    
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;    
+    width: 50%;
+}
+
+.home-content h3 {
+    margin-top: 20px;
+}
+
+.home-content .btn-orcamento {
+    margin-top: 30px;
+    padding: 20px 60px;
+    width: auto;
+    align-self: flex-start;
+}
+
+/* Estilos da seção Serviços ------------------------------------*/
+
+.servicos {
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px 50px 0px;
+}
+
+.servicos-container {
+    display: flex;    
+    flex-direction: column;
+    width: 1280px;
+}
+
+.servicos-container .titulo {
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.cards-container {
+    display: flex;    
+    justify-content: space-between;    
+    flex-wrap: wrap;    
+}
+
+.card-servico {
+    display: flex;
+    flex-direction: column;    
+    background: linear-gradient(150deg, rgba(0, 0, 0, 0.7), #034e6e33);
+    width: 400px;
+    height: auto;
+    border-radius: 30px;
+    border-bottom: 1px #05a2e5 solid;
+    margin-top: 60px;
+    padding: 0px 60px 60px 60px;
+}
+
+.card-servico img {
+    margin-top: -15px;
+}
+
+.card-servico h2 {
+    margin-top: 40px;
+}
+
+.card-servico p {
+    margin-top: 30px;
+}
+
+.sub-h2 {
+    font-size: 26;
+}
+
+/* Estilos da seção de Portfólio ------------------------------------*/
+
+.portfolio {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px 50px 0px;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    width: 1280px;
+}
+
+.portfolio-container .titulo {
+    align-self: center;    
+    margin-bottom: 15px;
+}
+
+.portfolio-container .subtitulo {
+    align-self: center;
+    margin-bottom: 40px;
+}
+
+/* Estilos do Swiper ------------------------------------*/
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 40px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.swiper-pagination {
+    bottom: -40px;
+}
+
+/* Estilos da seção CTA ------------------------------------*/
+
+.cta {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px 50px 0px;
+}
+
+.cta-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1280px;
+}
+
+.cta-container .btn-orcamento {
+    margin-top: 30px;
+    padding: 20px 60px;
+    width: auto;
+}
+
+.cta-container .titulo {
+    margin-bottom: 15px;
+    text-align: center;
+    width: 50%;
+}
+
+.cta-container .subtitulo {
+    text-align: center;
+    width: 60%;
+}
+
+/* Estilos da seção FAQ ------------------------------------*/
+
+.faq {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px 50px 0px;
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1280px;
+}
+
+.faq-container .titulo {
+    margin-bottom: 40px;
+    text-align: center;     
+}
+
+/* Estilos do Accordion ------------------------------------*/
+
+.accordion-wrapper {
+    width: 741px;
+}
+
+.accordion-button {
+    display: flex;
+    justify-content: space-between;
+    background-color: #111;
+    color: #fff;
+    padding: 15px 20px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-bottom: 1px solid #333;
+    border-radius: 10px;
+}
+
+.accordion-button:hover {
+    background-color: #222;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #1a1a1a;
+    color: #ccc;
+    transition: max-height 0.3s ease;
+    padding: 0 20px;
+}
+
+.accordion-content p {
+    margin: 15px 0;
+}
+
+.arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    font-size: 16px;
+}
+
+.accordion-button.active .arrow {
+  transform: rotate(180deg); /* seta apontando pra cima */
+}
+
+/* Estilos do Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px 50px 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-container p {
+    color: #696969;
+}
+
+.icones-sociais {
+    display: flex;
+    gap: 16px;
+    color: #05a2e5;
+    cursor: pointer;
+}
