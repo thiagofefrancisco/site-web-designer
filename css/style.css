@@ -137,7 +137,7 @@ p {
 /* Estilos da Home ------------------------------------*/
 
 .home {
-    background-image: url("/images/background.webp");
+    background-image: url("images/background.webp");
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
